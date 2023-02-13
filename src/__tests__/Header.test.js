@@ -4,6 +4,11 @@ import Header from "../components/Header";
 
 test("displays the toggle button", () => {
   render(<Header />);
+  
+});
+
+test("displays the toggle button", () => {
+  render(<Header />);
   expect(screen.queryByText(/ Mode/)).toBeInTheDocument();
 });
 

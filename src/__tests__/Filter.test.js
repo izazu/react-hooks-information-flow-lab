@@ -4,6 +4,12 @@ import Filter from "../components/Filter";
 
 test("displays the <select> element", () => {
   render(<Filter />);
+  
+});
+
+
+test("displays the <select> element", () => {
+  render(<Filter />);
   expect(screen.queryByRole("combobox")).toBeInTheDocument();
 });
 

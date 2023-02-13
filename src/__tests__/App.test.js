@@ -2,6 +2,11 @@ import "@testing-library/jest-dom";
 import { render, screen, fireEvent } from "@testing-library/react";
 import App from "../components/App";
 
+test("displays the App component", () => {
+  render(<App />);
+
+});
+
 test("displays in 'light' mode when initialized", () => {
   const { container } = render(<App />);
   expect(container.querySelector(".light")).toBeInTheDocument();
